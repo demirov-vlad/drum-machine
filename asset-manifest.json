@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/demirov-vlad/drum-machine/static/css/main.b8407e09.css",
+    "main.js": "/demirov-vlad/drum-machine/static/js/main.024454cf.js",
+    "static/js/787.e4ae0a49.chunk.js": "/demirov-vlad/drum-machine/static/js/787.e4ae0a49.chunk.js",
+    "index.html": "/demirov-vlad/drum-machine/index.html",
+    "main.b8407e09.css.map": "/demirov-vlad/drum-machine/static/css/main.b8407e09.css.map",
+    "main.024454cf.js.map": "/demirov-vlad/drum-machine/static/js/main.024454cf.js.map",
+    "787.e4ae0a49.chunk.js.map": "/demirov-vlad/drum-machine/static/js/787.e4ae0a49.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b8407e09.css",
+    "static/js/main.024454cf.js"
+  ]
+}
