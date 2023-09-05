@@ -1,38 +1,58 @@
+/* Center the content vertically and horizontally */
 .App {
-  text-align: center;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    grid-row:1;
+    grid-column:1/-1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#display {
+    grid-row:5;
+    grid-column:1/-1;
+}
+
+/* Create a container for the drum machine */
+.drum-machine {
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3,100px);
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    height: 100vh; /* Make the drum machine take up the full viewport height */
+    background-color: lightcoral;
+}
+
+/* Style for individual drum pads */
+.drum-pad {
+    width: 100px;
+    height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Add a smooth background color transition */
+}
+
+.gray-elements {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f2023;
+    color: lightcoral;
+    box-shadow: 5px 10px 20px 5px black;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+/* Highlight the active drum pad */
+.drum-pad.active {
+    background-color: #3b3e40; /* Change the background color when active */
+}
+
+.drum-pad:active {
+    background-color: #3b3e40; /* Change the background color when active */
+}
+
+#display {
+    height: 40px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
